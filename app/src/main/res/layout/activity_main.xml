@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.ajmichael.pinochleshuffler.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <EditText
+            android:id="@+id/phone1EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="@string/player_1_phone_number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <EditText
+            android:id="@+id/phone2EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="@string/player_2_phone_number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <EditText
+            android:id="@+id/phone3EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="@string/player_3_phone_number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <EditText
+            android:id="@+id/phone4EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="@string/player_4_phone_number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/radio_pinochle" >
+        <RadioButton android:id="@+id/radio_pinochle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pinochle" />
+        <RadioButton android:id="@+id/radio_euchre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/euchre" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_deal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deal"
+        android:onClick="deal" />
+</LinearLayout>

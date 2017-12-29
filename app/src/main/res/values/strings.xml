@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Pinochle Shuffler</string>
+    <string name="player_1_phone_number">Player 1 phone number</string>
+    <string name="player_2_phone_number">Player 2 phone number</string>
+    <string name="player_3_phone_number">Player 3 phone number</string>
+    <string name="player_4_phone_number">Player 4 phone number</string>
+    <string name="pinochle">Pinochle</string>
+    <string name="euchre">Euchre</string>
+    <string name="deal">Deal</string>
 </resources>
